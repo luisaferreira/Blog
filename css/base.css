@@ -1,0 +1,36 @@
+:root {
+    --blue: #3EA1DB;
+    --blue-dark: #574AE8;
+    --white: #FFF;
+    --grey: #f3f5f7;
+
+    --title: #313131;
+    --text: #B6B6B6;
+    
+    --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+}
+
+@font-face {
+  font-family: LexendDeca;
+  src: url(../fontes/LexendDeca-Regular.ttf);
+
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../fontes/Inter-Regular.ttf);
+}
+
+body {
+  background: var(--grey);
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.texto {
+  font-family: 'LexendDeca', sans-serif;
+  font-weight: 400;
+}
