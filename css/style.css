@@ -23,6 +23,9 @@
     border: 0;
     border-radius: 5px;
 
+    background-image: url(../img/loupe.png);
+    background-repeat: no-repeat;
+    background-position: .8rem;
     background-color: rgba(255, 255, 255, 0.2);
     color: var(--white);
 
@@ -30,6 +33,7 @@
     font-family: 'Inter', sans-serif;
 
     padding: 1rem;
+    padding-left: 3rem;
     box-sizing: border-box;
 }
 
