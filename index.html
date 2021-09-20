@@ -28,48 +28,48 @@
     </header>
 
     <main class="container container-main">
-            <article class="artigo">
-                <div class="container-artigo-superior">
+            <article class="artigo container-post">
+                <div class="container-artigo-superior date">
                     <p class="artigo-data texto">02 de jul, 2021</p>
                     <i class="material-icons artigo-icone">favorite_border</i>
                 </div>
-                <h2 class="artigo-titulo texto">Agora é oficial: o Windows 11 está vindo</h2>
-                <p class="artigo-texto texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                <h2 class="artigo-titulo texto title">Agora é oficial: o Windows 11 está vindo</h2>
+                <p class="artigo-texto texto description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
                     vestibulum auctor est. Nam
                     vitae
                     finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
             </article>
 
-            <article class="artigo">
-                <div class="container-artigo-superior">
+            <article class="artigo container-post">
+                <div class="container-artigo-superior date">
                     <p class="artigo-data texto">02 de jul, 2021</p>
                     <i class="material-icons artigo-icone">favorite_border</i>
                 </div>
-                <h2 class="artigo-titulo texto">Tim Berners-Lee vai leiloar o código-fonte da web</h2>
-                <p class="artigo-texto texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                <h2 class="artigo-titulo texto title">Tim Berners-Lee vai leiloar o código-fonte da web</h2>
+                <p class="artigo-texto texto description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
                     vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu
                     ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo
                     sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper
                     libero.</p>
             </article>
 
-            <article class="artigo">
-                <div class="container-artigo-superior">
+            <article class="artigo container-post">
+                <div class="container-artigo-superior date">
                     <p class="artigo-data texto">02 de jul, 2021</p>
                     <i class="material-icons artigo-icone">favorite_border</i>
                 </div>
-                <h2 class="artigo-titulo texto">Tem Firefox novo no pedaço e você vai querer migrar</h2>
-                <p class="artigo-texto texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                <h2 class="artigo-titulo texto title">Tem Firefox novo no pedaço e você vai querer migrar</h2>
+                <p class="artigo-texto texto description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
                     vestibulum auctor est.</p>
             </article>
 
-            <article class="artigo artigo-ultimo">
-                <div class="container-artigo-superior">
+            <article class="artigo artigo-ultimo container-post">
+                <div class="container-artigo-superior date">
                     <p class="artigo-data texto">02 de jul, 2021</p>
                     <i class="material-icons artigo-icone">favorite_border</i>
                 </div>
-                <h2 class="artigo-titulo texto">John McAfee, criador do antivírus McAfee, morre</h2>
-                <p class="artigo-texto texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                <h2 class="artigo-titulo texto title">John McAfee, criador do antivírus McAfee, morre</h2>
+                <p class="artigo-texto texto description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
                     vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu
                     ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit
                     amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.
@@ -77,6 +77,20 @@
             </article>
 
     </main>
-</body>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.container-post', { delay: 200});
+        ScrollReveal().reveal('.date', { delay: 400});
+        ScrollReveal().reveal('.title', { delay: 500})
+        ScrollReveal().reveal('.description', { delay: 600})
+    </script>
+</body>
 </html>
